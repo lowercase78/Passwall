@@ -93,15 +93,6 @@ opkg install kmod-netlink-diag
 sleep 1
 opkg install kmod-tun
 
->/etc/banner
-
-echo "    ___    __  ___________  __  ______  __________ ___________   __
-   /   |  /  |/  /  _/ __ \/ / / / __ \/ ___/ ___// ____/  _/ | / /
-  / /| | / /|_/ // // /_/ / /_/ / / / /\__ \\__ \ / __/  / //  |/ /
- / ___ |/ /  / // // _  _/ __  / /_/ /___/ /__/ / /____/ // /|  /
-/_/  |_/_/  /_/___/_/ |_/_/ /_/\____//____/____/_____/___/_/ |_/                                                                                                
-telegram : @AmirHosseinTSL" >> /etc/banner
-
 sleep 1
 
 
@@ -228,7 +219,6 @@ uci commit system
 
 sed -i 's/XTLS\/Xray-core/GFW-knocker\/Xray-core/g' /usr/lib/lua/luci/passwall2/com.lua
 
-uci set system.@system[0].hostname=By-AmirHossein
 
 uci commit system
 
